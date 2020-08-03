@@ -1,0 +1,391 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-fluid {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+body {
+  background-color: #222121;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: #777777;
+}
+
+a:visited {
+  color: #777777;
+}
+
+a:active {
+  color: #777777;
+}
+
+* {
+  overflow: hidden;
+}
+
+body {
+  color: #777777;
+  background-color: #222121;
+  font-family: "Segoe UI", sans-serif;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/bg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+header nav {
+  width: 100%;
+  height: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-transition: 1.5;
+  transition: 1.5;
+}
+
+header nav h1 {
+  color: #fff;
+  margin-top: 7px;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  letter-spacing: 3px;
+  margin-top: 14px;
+  width: 400px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 1.5rem;
+}
+
+header nav ul li {
+  list-style: none;
+  border-radius: 25px;
+  background-color: #0e0d0d;
+  width: 100px;
+  text-align: center;
+}
+
+header .theme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  width: 70%;
+  min-height: 7rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15rem;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+header .theme h1 {
+  text-transform: uppercase;
+  font-size: 48px;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+header .theme button {
+  width: 150px;
+  height: 2.5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-transform: uppercase;
+  margin-top: 8px;
+  background-color: transparent;
+  border: 1px solid #ddd;
+  letter-spacing: 2px;
+  color: #fff;
+  -webkit-transition: 1s;
+  transition: 1s;
+  outline: none;
+}
+
+header .theme button:hover {
+  background-color: #f9f9ff;
+  color: #324566;
+}
+
+header .sideBar {
+  width: 40%;
+  background-color: #222121;
+  height: 400px;
+  display: block;
+  position: absolute;
+  top: 13px;
+  left: -40%;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+header .sideBar h2 {
+  font-size: 18px;
+  position: absolute;
+  right: 20px;
+}
+
+header .sideBar form {
+  text-align: center;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header .sideBar form h3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+header .sideBar form input[type="text"], header .sideBar form [type="password"] {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  height: 30px;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  padding-left: 5px;
+  outline: none;
+  background-color: #f9f9ff;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+header .sideBar form button {
+  width: 100px;
+  height: 1.5rem;
+  text-transform: uppercase;
+  margin-top: 5px;
+  background-color: green;
+  border: none;
+  border-radius: 3px;
+  letter-spacing: 2px;
+  color: #fff;
+  -webkit-transition: 1s;
+  transition: 1s;
+  font-size: 12px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+header .sideBar form button:hover {
+  background-color: #00b300;
+}
+
+header .sideBar form .checked input {
+  cursor: pointer;
+}
+
+header .sideBar form p {
+  font-style: italic;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+header .sideBar form .register {
+  margin-top: 1rem;
+}
+
+header .sideBar form .register .login-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .sideBar form .register .login-head .line1 {
+  width: 80px;
+  height: 1px;
+  background-color: #ddd;
+  margin-top: 12px;
+  margin-right: 8px;
+}
+
+header .sideBar form .register .login-head .line2 {
+  width: 80px;
+  background-color: #ddd;
+  height: 1px;
+  margin-top: 12px;
+  margin-left: 8px;
+}
+
+header .sideBar form .register .loginBtn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header .sideBar form .register .loginBtn-container .google-btn {
+  border: none;
+  width: 100%;
+  height: 40px;
+  background-color: #fff;
+  color: #777777;
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+header .sideBar form .register .loginBtn-container .facebook-btn {
+  border: none;
+  width: 100%;
+  height: 40px;
+  background-color: #fff;
+  color: #777777;
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    left: -50%;
+  }
+  100% {
+    left: .5%;
+  }
+}
+
+@keyframes slide {
+  0% {
+    left: -50%;
+  }
+  100% {
+    left: .5%;
+  }
+}
+
+@-webkit-keyframes cancel {
+  0% {
+    left: .5%;
+  }
+  100% {
+    left: -50%;
+  }
+}
+
+@keyframes cancel {
+  0% {
+    left: .5%;
+  }
+  100% {
+    left: -50%;
+  }
+}
+
+@-webkit-keyframes move {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+    -webkit-filter: blur(1px);
+            filter: blur(1px);
+  }
+}
+
+@keyframes move {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+    -webkit-filter: blur(1px);
+            filter: blur(1px);
+  }
+}
+
+@-webkit-keyframes return {
+  0% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-filter: blur(0);
+            filter: blur(0);
+  }
+}
+
+@keyframes return {
+  0% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-filter: blur(0);
+            filter: blur(0);
+  }
+}

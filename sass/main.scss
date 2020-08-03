@@ -1,0 +1,276 @@
+@import 'resets';
+@import 'variables';
+
+* {
+    overflow: hidden;
+}
+
+ body {
+     color: $text-color;
+     background-color: rgb(34, 33, 33);
+     font-family: $primary-font;
+ }
+
+ header {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../img/bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    
+
+    nav {
+        width: 100%;
+        height: 4rem;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        transition: 1.5;
+
+        h1 {
+            color: $white;
+            margin-top: 7px;
+            text-transform: capitalize;
+            letter-spacing: 3px;
+        }
+
+        ul {
+            display: flex;
+            letter-spacing: 3px;
+            margin-top: 14px;
+            width: 400px;
+            justify-content: space-evenly;
+            height: 1.5rem;
+
+            li {
+                list-style: none;
+                border-radius: 25px;
+                background-color: rgb(14, 13, 13);
+                width: 100px;
+                text-align: center;
+            }
+            
+        }
+    
+    }
+
+    .theme {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        width: 70%;
+        min-height: 7rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15rem;
+        transition: 1.5s;
+        
+        
+        h1 {
+            text-transform: uppercase;
+            font-size: 48px;
+            letter-spacing: 2px;
+            color: $white;
+        }
+
+        button {
+            width: 150px;
+            height: 2.5rem;
+            align-self: center;
+            text-transform: uppercase;
+            margin-top: 8px;
+            background-color: transparent;
+            border: 1px solid #ddd;
+            letter-spacing: 2px;
+            color: $white;
+            transition: 1s;
+            outline: none;
+
+            &:hover {
+                background-color: $offwhite;
+                color: $title-color;
+            }
+        }
+    }
+    
+    .sideBar {
+        width: 40%;
+        background-color: rgb(34, 33, 33);
+        height: 400px;
+        display: block;
+        position: absolute;
+        top: 13px;
+        left: -40%;
+        transition: 1.5s;
+        padding: 10px;
+        border-radius: 5px;
+
+        h2 {
+            
+            font-size: 18px;
+            position: absolute;
+            right: 20px;
+        }
+        
+        form {
+            text-align: center;
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+
+            h3 {
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+            input[type="text"], [type="password"] {
+                display: block;
+                width: 100%;
+                margin-bottom: 10px;
+                height: 30px;
+                border: none;
+                border-bottom: 2px solid #ddd;
+                padding-left: 5px;
+                outline: none;
+                background-color: $offwhite;
+                font-size: 12px;
+                letter-spacing: 1px;
+            }
+
+            button {
+                width: 100px;
+                height: 1.5rem;
+                text-transform: uppercase;
+                margin-top: 5px;
+                background-color: green;
+                border: none;
+                border-radius: 3px;
+                letter-spacing: 2px;
+                color: $white;
+                transition: 1s;
+                font-size: 12px;
+                margin-bottom: 5px;
+                cursor: pointer;
+                outline: none;
+
+                &:hover {
+                    background-color: lighten($color: green, $amount: 10);
+                }
+
+            }
+
+            .checked {
+                input{
+                    cursor: pointer;
+                }
+            }
+
+            p {
+                font-style: italic;
+                font-size: 13px;
+                letter-spacing: 1px;
+                margin-top: 4px;
+                cursor: pointer;
+            }
+
+            .register {
+                margin-top: 1rem;
+
+                .login-head {
+                    display: flex;
+                    align-content: center;
+                    justify-content: center;
+
+                    .line1 {
+                        width: 80px;
+                        height: 1px;
+                        background-color: #ddd;
+                        margin-top: 12px;
+                        margin-right: 8px;
+                    }
+                    .line2 {
+                        width: 80px;
+                        background-color: #ddd;
+                        height: 1px;
+                        margin-top: 12px;
+                        margin-left: 8px;
+                    }
+                }
+
+                .loginBtn-container {
+                    display: flex;
+                    flex-direction: column;
+                    
+
+                    .google-btn {
+                        border: none;
+                        width: 100%;
+                        height: 40px;
+                        background-color: $white;
+                        color: $text-color;
+                        text-align: center;
+                        margin-bottom: 2px;
+                    }
+                    .facebook-btn {
+                        border: none;
+                        width: 100%;
+                        height: 40px;
+                        background-color: $white;
+                        color: $text-color;
+                        text-align: center; 
+                        margin-bottom: 2px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes slide {
+    0%{
+        left: -50%;
+    }
+    100%{
+        left: .5%;
+    }
+}
+@keyframes cancel {
+    0%{
+        left: .5%;
+    }
+    100%{
+        left: -50%;
+    }
+}
+
+@keyframes move {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(100px);
+        filter: blur(1px);
+    }
+}
+
+@keyframes return {
+    0%{
+        transform: translateX(100px);
+    }
+    100%{
+        transform: translateX(0);
+        filter: blur(0);
+    }
+}
+
+
+
+

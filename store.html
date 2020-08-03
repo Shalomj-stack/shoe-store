@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sHoe pLUG</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/store.css">
+</head>
+<body>
+    <nav>
+        <h1 class="cursor">Login</h1>
+        <div class="search-bar">
+            <input type="search" name="" id="" placeholder="Search...">
+            <i class="fas fa-search"></i>
+        </div>
+        <ul>
+            <li class="cursor">Home</li>
+            <li class="cursor">Contact</li>
+            <li class="cursor">Outlets</li>
+        </ul>
+    </nav>
+    <div class="sideBar">
+        <h2 id="cancel" class="cursor">x</h2>
+        <div class="container-fluid">
+            <form action="">
+                <h3>Login to ORDER now!</h3>
+                <input type="text" name="uname" id="uname" placeholder="Email">
+                <input type="password" name="pword" id="pword" placeholder="Password">
+                <button type="submit" class="signIn-Btn">sign In</button>
+                <div class="checked">
+                    <input type="checkbox" name="checked" id="checked"> Remember me</div>
+                    <p>forgot password?</p>
+                <div class="register">
+                    <div class="container">
+                        <div class="login-head">
+                            <div class="line1"></div><p>OR</p><div class="line2"></div>
+                        </div>
+                        <div class="loginBtn-container">
+                            <button                     class="google-btn">Login with Google</button>
+                            <button class="facebook-btn">Login with Facebook</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <section>
+       <div class="container-fluid">
+           <div class="showcase">
+              <div class="slideshow-container">
+                <div class="image-slide">
+                    <div class="mySlides fade">
+                        <img src="img/img1.jpg">
+                        <div class="text">New Arrivals!!!</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="img/img2.jpg">
+                        <div class="text">New Arrivals!!!</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="img/img3.jpg">
+                        <div class="text">New Arrivals!!!</div>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+              </div>
+               <div class="discount-box">
+                   <img src="img/new.jpg" alt="">
+                   <h4>Get 40% discount on new products</h4>
+               </div>
+           </div>
+           <div class="features">
+                <div class="container">
+                    <div class="categories-showcase">
+                        <h1>shop by categories</h1>
+                        <div class="categories">
+                            <div class="categories-img">
+                                <img src="img/of.jpg" alt="">
+                                <p>official man</p>
+                            </div>
+                            <div class="categories-img">
+                                <img src="img/ms.jpg" alt="">
+                                <p>men's slippers</p>
+                            </div>
+                            <div class="categories-img">
+                                <img src="img/cm.jpg" alt="">
+                                <p>casual man</p>
+                            </div>
+                            <div class="categories-img">
+                                <img src="img/am.jpg" alt="">
+                                <p>athletic man</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="brand-showcase">
+                        <h1>shop by brand</h1>
+                        <div class="brand">
+                            <div class="brand-img">
+                                <img src="img/adidas.jpg" alt="">
+                                <p>adidas men's shoes</p>
+                            </div>
+                            <div class="brand-img">
+                                <img src="img/puma.jpeg" alt="">
+                                <p>puma men's shoes</p>
+                            </div>
+                            <div class="brand-img">
+                                <img src="img/nike.jpeg" alt="">
+                                <p>nike men's shoes</p>
+                            </div>
+                            <div class="brand-img">
+                                <img src="img/jordan.jpeg" alt="">
+                                <p>jordans men's shoes</p>
+                            </div>
+                            <div class="brand-img">
+                                <img src="img/vans.jpeg" alt="">
+                                <p>vans men's shoes</p>
+                            </div>
+                            <div class="brand-img">
+                                <img src="img/newB.jpeg" alt="">
+                                <p>new balance men's shoes</p>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+           </div>
+           <div class="product-title">
+               <h1>products</h1>
+           </div>
+           <div class="grid-container">
+            <div class="filter-container">
+                <button type="submit" class="confirm-btn">apply filter</button>
+                <div class="filter-contents">
+                    <p>Filter by price</p>
+                    <div class="products">
+                     <p>Product categories</p>
+                     <select name="" id="">
+                         <option value="">official man</option>
+                         <option value="">men's slippers</option>
+                         <option value="">casual man</option>
+                         <option value="">athletic man</option>
+                     </select>
+                    </div>
+                    <div class="size">
+                     <p>Filter by size</p>
+                     <select name="" id="">
+                         <option value="">men (us:10 uk:9 eu:44)</option>
+                         <option value="">men (us:10.5 uk:9.5 eu:44.5)</option>
+                         <option value=""">men (us:11 uk:10 eu:45)</option>
+                         <option value="">men (us:11.5 uk:10.5 eu:45.5)</option>
+                         <option value="">men (us:12 uk:11 eu:46)</option>
+                         <option value="">men (us:13 uk:12 eu:47)</option>
+                     </select>
+                    </div>
+                    <div class="color">
+                     <p>Flter by color</p>
+                     <select name="" id="">
+                         <option value="">red</option>
+                         <option value="">black</option>
+                         <option value="">yellow</option>
+                         <option value="">white</option>
+                         <option value="">navy</option>
+                         <option value="">blue</option>
+                         <option value="">brown</option>
+                     </select>
+                    </div>
+                </div>
+            </div>
+                <div class="shoe-grid">
+                    <div class="product-card">
+                        <div class="upper-part">
+                            <img src="img/nike.jpeg" alt="">
+                            <div class="discount">
+                                -40%
+                            </div>
+                        </div>
+                        <div class="lower-part">
+                            <h5>
+                                Athletic man
+                            </h5>
+                            <h3>
+                                Calvin Klien
+                            </h3>
+                            <p>$99.80</p>
+                            <button type="submit">
+                                add to cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="upper-part">
+                            <img src="img/nike.jpeg" alt="">
+                            <div class="discount">
+                                -40%
+                            </div>
+                        </div>
+                        <div class="lower-part">
+                            <h5>
+                                Athletic man
+                            </h5>
+                            <h3>
+                                Calvin Klien
+                            </h3>
+                            <p>$99.80</p>
+                            <button type="submit">
+                                add to cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="upper-part">
+                            <img src="img/nike.jpeg" alt="">
+                            <div class="discount">
+                                -40%
+                            </div>
+                        </div>
+                        <div class="lower-part">
+                            <h5>
+                                Athletic man
+                            </h5>
+                            <h3>
+                                Calvin Klien
+                            </h3>
+                            <p>$99.80</p>
+                            <button type="submit">
+                                add to cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="upper-part">
+                            <img src="img/nike.jpeg" alt="">
+                            <div class="discount">
+                                -40%
+                            </div>
+                        </div>
+                        <div class="lower-part">
+                            <h5>
+                                Athletic man
+                            </h5>
+                            <h3>
+                                Calvin Klien
+                            </h3>
+                            <p>$99.80</p>
+                            <button type="submit">
+                                add to cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="upper-part">
+                            <img src="img/nike.jpeg" alt="">
+                            <div class="discount">
+                                -40%
+                            </div>
+                        </div>
+                        <div class="lower-part">
+                            <h5>
+                                Athletic man
+                            </h5>
+                            <h3>
+                                Calvin Klien
+                            </h3>
+                            <p>$99.80</p>
+                            <button type="submit">
+                                add to cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="upper-part">
+                            <img src="img/nike.jpeg" alt="">
+                            <div class="discount">
+                                -40%
+                            </div>
+                        </div>
+                        <div class="lower-part">
+                            <h5>
+                                Athletic man
+                            </h5>
+                            <h3>
+                                Calvin Klien
+                            </h3>
+                            <p>$99.80</p>
+                            <button type="submit">
+                                add to cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="upper-part">
+                            <img src="img/nike.jpeg" alt="">
+                            <div class="discount">
+                                -40%
+                            </div>
+                        </div>
+                        <div class="lower-part">
+                            <h5>
+                                Athletic man
+                            </h5>
+                            <h3>
+                                Calvin Klien
+                            </h3>
+                            <p>$99.80</p>
+                            <button type="submit">
+                                add to cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="upper-part">
+                            <img src="img/nike.jpeg" alt="">
+                            <div class="discount">
+                                -40%
+                            </div>
+                        </div>
+                        <div class="lower-part">
+                            <h5>
+                                Athletic man
+                            </h5>
+                            <h3>
+                                Calvin Klien
+                            </h3>
+                            <p>$99.80</p>
+                            <button type="submit">
+                                add to cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="upper-part">
+                            <img src="img/nike.jpeg" alt="">
+                            <div class="discount">
+                                -40%
+                            </div>
+                        </div>
+                        <div class="lower-part">
+                            <h5>
+                                Athletic man
+                            </h5>
+                            <h3>
+                                Calvin Klien
+                            </h3>
+                            <p>$99.80</p>
+                            <button type="submit">
+                                add to cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="upper-part">
+                            <img src="img/nike.jpeg" alt="">
+                            <div class="discount">
+                                -40%
+                            </div>
+                        </div>
+                        <div class="lower-part">
+                            <h5>
+                                Athletic man
+                            </h5>
+                            <h3>
+                                Calvin Klien
+                            </h3>
+                            <p>$99.80</p>
+                            <button type="submit">
+                                add to cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="upper-part">
+                            <img src="img/nike.jpeg" alt="">
+                            <div class="discount">
+                                -40%
+                            </div>
+                        </div>
+                        <div class="lower-part">
+                            <h5>
+                                Athletic man
+                            </h5>
+                            <h3>
+                                Calvin Klien
+                            </h3>
+                            <p>$99.80</p>
+                            <button type="submit">
+                                add to cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="upper-part">
+                            <img src="img/nike.jpeg" alt="">
+                            <div class="discount">
+                                -40%
+                            </div>
+                        </div>
+                        <div class="lower-part">
+                            <h5>
+                                Athletic man
+                            </h5>
+                            <h3>
+                                Calvin Klien
+                            </h3>
+                            <p>$99.80</p>
+                            <button type="submit">
+                                add to cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="upper-part">
+                            <img src="img/nike.jpeg" alt="">
+                            <div class="discount">
+                                -40%
+                            </div>
+                        </div>
+                        <div class="lower-part">
+                            <h5>
+                                Athletic man
+                            </h5>
+                            <h3>
+                                Calvin Klien
+                            </h3>
+                            <p>$99.80</p>
+                            <button type="submit">
+                                add to cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="upper-part">
+                            <img src="img/nike.jpeg" alt="">
+                            <div class="discount">
+                                -40%
+                            </div>
+                        </div>
+                        <div class="lower-part">
+                            <h5>
+                                Athletic man
+                            </h5>
+                            <h3>
+                                Calvin Klien
+                            </h3>
+                            <p>$99.80</p>
+                            <button type="submit">
+                                add to cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="upper-part">
+                            <img src="img/nike.jpeg" alt="">
+                            <div class="discount">
+                                -40%
+                            </div>
+                        </div>
+                        <div class="lower-part">
+                            <h5>
+                                Athletic man
+                            </h5>
+                            <h3>
+                                Calvin Klien
+                            </h3>
+                            <p>$99.80</p>
+                            <button type="submit">
+                                add to cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="upper-part">
+                            <img src="img/nike.jpeg" alt="">
+                            <div class="discount">
+                                -40%
+                            </div>
+                        </div>
+                        <div class="lower-part">
+                            <h5>
+                                Athletic man
+                            </h5>
+                            <h3>
+                                Calvin Klien
+                            </h3>
+                            <p>$99.80</p>
+                            <button type="submit">
+                                add to cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="upper-part">
+                            <img src="img/nike.jpeg" alt="">
+                            <div class="discount">
+                                -40%
+                            </div>
+                        </div>
+                        <div class="lower-part">
+                            <h5>
+                                Athletic man
+                            </h5>
+                            <h3>
+                                Calvin Klien
+                            </h3>
+                            <p>$99.80</p>
+                            <button type="submit">
+                                add to cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="upper-part">
+                            <img src="img/nike.jpeg" alt="">
+                            <div class="discount">
+                                -40%
+                            </div>
+                        </div>
+                        <div class="lower-part">
+                            <h5>
+                                Athletic man
+                            </h5>
+                            <h3>
+                                Calvin Klien
+                            </h3>
+                            <p>$99.80</p>
+                            <button type="submit">
+                                add to cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="upper-part">
+                            <img src="img/nike.jpeg" alt="">
+                            <div class="discount">
+                                -40%
+                            </div>
+                        </div>
+                        <div class="lower-part">
+                            <h5>
+                                Athletic man
+                            </h5>
+                            <h3>
+                                Calvin Klien
+                            </h3>
+                            <p>$99.80</p>
+                            <button type="submit">
+                                add to cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="upper-part">
+                            <img src="img/nike.jpeg" alt="">
+                            <div class="discount">
+                                -40%
+                            </div>
+                        </div>
+                        <div class="lower-part">
+                            <h5>
+                                Athletic man
+                            </h5>
+                            <h3>
+                                Calvin Klien
+                            </h3>
+                            <p>$99.80</p>
+                            <button type="submit">
+                                add to cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="upper-part">
+                            <img src="img/nike.jpeg" alt="">
+                            <div class="discount">
+                                -40%
+                            </div>
+                        </div>
+                        <div class="lower-part">
+                            <h5>
+                                Athletic man
+                            </h5>
+                            <h3>
+                                Calvin Klien
+                            </h3>
+                            <p>$99.80</p>
+                            <button type="submit">
+                                add to cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="upper-part">
+                            <img src="img/nike.jpeg" alt="">
+                            <div class="discount">
+                                -40%
+                            </div>
+                        </div>
+                        <div class="lower-part">
+                            <h5>
+                                Athletic man
+                            </h5>
+                            <h3>
+                                Calvin Klien
+                            </h3>
+                            <p>$99.80</p>
+                            <button type="submit">
+                                add to cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="upper-part">
+                            <img src="img/nike.jpeg" alt="">
+                            <div class="discount">
+                                -40%
+                            </div>
+                        </div>
+                        <div class="lower-part">
+                            <h5>
+                                Athletic man
+                            </h5>
+                            <h3>
+                                Calvin Klien
+                            </h3>
+                            <p>$99.80</p>
+                            <button type="submit">
+                                add to cart
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="upper-part">
+                            <img src="img/nike.jpeg" alt="">
+                            <div class="discount">
+                                -40%
+                            </div>
+                        </div>
+                        <div class="lower-part">
+                            <h5>
+                                Athletic man
+                            </h5>
+                            <h3>
+                                Calvin Klien
+                            </h3>
+                            <p>$99.80</p>
+                            <button type="submit">
+                                add to cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+           </div>
+       </div>
+    </section>
+
+    <section class="related-items">
+        <div class="container">
+            <h1>Related Items</h1>
+            <div class="items-container">
+                <div class="ri-container">
+                    <img src="img/adidas.jpg" alt="">
+                    <p>adidas mezzo sneakers</p>
+                    <h3>new</h3>
+                </div>
+                <div class="ri-container">
+                    <img src="img/adidas.jpg" alt="">
+                    <p>adidas mezzo sneakers</p>
+                </div>
+                <div class="ri-container">
+                    <img src="img/adidas.jpg" alt="">
+                    <p>adidas mezzo sneakers</p>
+                </div>
+                <div class="ri-container">
+                    <img src="img/adidas.jpg" alt="">
+                    <p>adidas mezzo sneakers</p>
+                    <h3>new</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="content-container">
+                <div class="self-care">
+                    <p>Size chart</p>
+                    <p>Privacy policy</p>
+                    <p>Payment & shipping</p>
+                    <p>Complaints</p>
+                    <p>Gift cards policy</p>
+                    <p>My account</p>
+                </div>       
+                
+                <div class="newsletter-container">
+                    <input type="text" name="subscribe" id="subscribe">
+                    <button class="cursor">
+                        Subscribe
+                    </button>
+                    <p>Subscribe for new Recover Construction Company contents, updates, surveys & offers.</p>
+                    <div class="social-icons">
+                        Follow us on
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                Copyright &copy; 2020
+            </div>
+        </div>
+    </footer>
+
+   <script src="js/main.js"></script>
+</body>
+</html>

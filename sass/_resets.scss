@@ -1,0 +1,43 @@
+@import 'variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.container-fluid {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body {
+    background-color: rgb(34, 33, 33);
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+a:link {
+    color: $text-color;
+}
+a:visited {
+    color: $text-color;
+}
+a:active {
+    color: $text-color;
+}
+
+
