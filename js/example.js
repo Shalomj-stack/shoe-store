@@ -29,10 +29,30 @@
            
         // });
 
-        // let fn = (function(){
-        //     return {
-        //         clickme: function(e){
-        //             $(".title").html(e.dataset.text);
-        //         }
-        //     }
-        // })();
+        let fn = (function(){
+            return {
+                clickme: function(e){
+                    // $(".title").html(e.dataset.text);
+                    fn.ussd();
+                },
+                ussd: function(){
+                    $.ajax({
+                        type: 'POST',
+                        url: 'https://consumerpromo.ng/api/testredeem/ussd',
+                        data: JSON.stringify({
+                            'phone':'+2347017723208',
+                            'text':'2'
+                        }),
+                        proccessData: false,
+                        contentType: false,
+                        success: function(res){
+                            $(".title").html(res);
+                            console.log(res)
+                        }
+                    })
+                }
+            }
+        })();
+
+
+       
